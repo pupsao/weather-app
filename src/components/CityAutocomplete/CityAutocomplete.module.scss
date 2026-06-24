@@ -1,0 +1,66 @@
+@use '../../styles/variables' as *;
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  outline: none;
+  background-color: $card-bg;
+  transition: border-color $transition-speed;
+
+  &:focus {
+    border-color: $primary-color;
+  }
+}
+
+.loadingContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: $card-bg;
+  border: 1px solid $border-color;
+  border-top: none;
+  border-radius: 0 0 $border-radius $border-radius;
+  padding: 0.5rem;
+  z-index: 10;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: $card-bg;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  margin-top: 0.25rem;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  li {
+    padding: 0.75rem 1rem;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background-color $transition-speed;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: $background-color;
+    }
+  }
+}

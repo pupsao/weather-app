@@ -1,0 +1,26 @@
+@use './styles/variables' as *;
+
+.addCityBtn {
+  width: 100%;
+  padding: 1rem;
+  border: 2px dashed $primary-color;
+  color: $primary-color;
+  background: transparent;
+  border-radius: $border-radius;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color $transition-speed;
+
+  &:hover {
+    background-color: rgba($primary-color, 0.05);
+  }
+}
+
+.emptyFavorites {
+  text-align: center;
+  padding: 3rem;
+  color: $text-secondary;
+  border: 1px dashed $border-color;
+  border-radius: $border-radius;
+  white-space: pre-line;
+}

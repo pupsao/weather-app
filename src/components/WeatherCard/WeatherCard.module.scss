@@ -1,0 +1,109 @@
+@use '../../styles/variables' as *;
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: $text-secondary;
+}
+
+.card {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 2px solid transparent;
+  transition: all $transition-speed;
+
+  &.favoriteCard {
+    border-color: $warning-color;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.2);
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.titleWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cityName {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $primary-color;
+  margin: 0;
+}
+
+.favBadge {
+  font-size: 0.75rem;
+  background-color: $warning-color;
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  display: inline-block;
+  align-self: flex-start;
+}
+
+.favBtn {
+  font-size: 1.5rem;
+  color: $border-color;
+  transition: color $transition-speed, transform 0.2s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &.active {
+    color: $warning-color;
+  }
+}
+
+.body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.tempBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: $text-secondary;
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $border-color;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: $text-secondary;
+
+  strong {
+    color: $text-main;
+  }
+}

@@ -1,0 +1,12 @@
+@use '../../styles/variables' as *;
+
+.chartContainer {
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
