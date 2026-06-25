@@ -1,5 +1,8 @@
 # Weather App (React Test Task)
 
+## 🚀 Live Demo
+You can view the working object at this link: **[Watch Demo](https://pupsao.github.io/weather-app/)**
+
 A responsive, feature-rich weather application built with React, Vite, and Zustand. The app allows users to search for cities, view current weather, 5-day forecasts, and hourly temperature charts, as well as manage a list of favorite cities.
 
 ## 🚀 Features
